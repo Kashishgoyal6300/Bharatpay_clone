@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Website</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+            background-color: #f4f4f4; /* Light background color */
+        }
+
+        nav {
+            background: #3b7bbb;
+            color: #fff;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        nav img {
+            max-width: 150px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #fff;
+            margin: 0 15px;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #ffd700;
+        }
+
+        main {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        main .image-container {
+            width: 100%;
+            height: 400px;
+            background-size: cover;
+            animation: image-slider 20s infinite;
+        }
+
+        section {
+            padding: 20px 0;
+            width: 100%;
+        }
+
+        section > .container {
+            width: 100%;
+            text-align: center;
+            background-color: #333; /* Dark background color */
+            color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        #mainpart {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+
+        .img {
+            text-align: center;
+            margin: 10px;
+        }
+
+        .img img {
+            max-width: 100px;
+            max-height: 100px;
+        }
+
+        #mainpart h4 {
+            margin-top: 10px;
+            font-size: 18px;
+        }
+
+        @keyframes image-slider {
+            0% {
+                background-image: url("https://th.bing.com/th/id/OIP.u9glQbNvWEZgE_EACXw4rwHaEK?w=312&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7");
+            }
+            25% {
+                background-image: url("https://th.bing.com/th/id/OIP.He2y3_xgEsParMARccWOlwHaCr?w=269&h=126&c=7&r=0&o=5&dpr=1.3&pid=1.7");
+            }
+            50% {
+                background-image: url("https://th.bing.com/th/id/OIP.1_ZR20sa6o7ahKNLE1P5SQHaEK?w=292&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7");
+            }
+            75% {
+                background-image: url("https://th.bing.com/th/id/OIP.eH7cIE-7QCNrJTBheLvKVwHaDt?w=333&h=150&c=7&r=0&o=5&dpr=1.3&pid=1.7");
+            }
+            100% {
+                background-image: url("https://th.bing.com/th/id/OIP.He2y3_xgEsParMARccWOlwHaCr?w=269&h=126&c=7&r=0&o=5&dpr=1.3&pid=1.7");
+            }
+        }
+        #second{
+            text-align: center; 
+            margin-bottom:10px;             
+        }
+        #second h4{
+            font-weight: bold;
+            color: chocolate;
+        }
+        #img{
+            display:flex;
+            
+            
+        }
+        #img h4{
+            margin-left:250px;
+            margin-top:100px;
+            text-align: center;
+            font-weight:800
+        }
+        #last h4{
+            text-align: center;
+            font-weight:700 ;
+        }
+        #last ul{
+            display:flex;
+            list-style-type: none;
+            justify-content: center;
+            background-color: white;
+            border:2px solid black;
+            border-radius:5px;
+        }
+        #last li{
+            margin-left:10px;
+            padding: 10px;
+    position: relative;
+        }
+        #last #blue{
+            background-color: blue;
+        }
+         .border{
+            background-color: white;
+            border: 5px solid black;
+            border-radius:5px;
+        }
+        .border img{
+           margin-left:10px; 
+           border:2px solid black;
+           border-radius:5px;
+        }
+        .border h3{
+            margin-left:10px; 
+        }
+        .border h3{
+            text-align:center;
+        }.border {
+    background-color: white;
+    border: 5px solid black;
+    border-radius: 5px;
+    text-align: center; /* Center the content horizontally */
+    padding: 10px; /* Add padding for better appearance */
+}
+
+#borderall {
+    display: flex;
+    align-items: center; /* Center the items vertically */
+}
+
+.border img {
+    margin-left: 10px;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+.border h3 {
+    margin-left: 10px;
+    text-align: center;
+}
+footer{
+                background-color:black;
+                margin-top:20px;
+                margin-bottom: 50px;
+            }
+            footer img{
+                width:150px;
+            }
+            footer span img{
+                width:100px;
+            }
+            footer .container .col-md-3{
+                margin-top:10px;
+                margin-bottom:10px;
+                /* height: 20px; */
+            }
+            #kashish{
+                height: 35px;
+                width: 30px;
+            }
+            header img{
+                width:500px;
+            }
+            footer .col-md-3{
+                color:white;
+            }
+             .line{
+                border-top: 1px solid white; 
+                width: 100%;
+                margin-top: 10px;
+            }
+            footer .img{
+                
+            }
+            .div2{
+    display:flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+section> .img img{
+    margin-left:20px;
+}
+.img2{
+    border-radius: 20px;
+}
+p{
+    font-size: large;
+}
+.color{
+    color: rgb(51, 100, 173);
+    
+}
+.content{
+    display:inline-block;
+}
+
+#margin-img{
+    margin-left: 5rem;
+}
+    </style>
+
+</head>
+<body>
+    <nav>
+        <img src="https://bp-wp-website-prod.s3.ap-south-1.amazonaws.com/wp-content/uploads/2023/09/bharatpe-logo-new-transp.png" alt="BharatPe Logo">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">Resources</a></li>
+            <li><a href="#">Press</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Contact us</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div class="image-container"></div>
+    </main>
+    <section>
+        <p class="container">
+            Number tells our story
+        </p>
+        <div id="mainpart">
+            <div class="img">
+                <img src="https://bp-wp-website-prod.s3.ap-south-1.amazonaws.com/wp-content/uploads/2023/09/payment.png" alt="">
+                <h4>Rs.1700+ Billion <br><small>TPV in Payments</small></h4>
+            </div>
+            <div class="img">
+                <img src="https://bp-wp-website-prod.s3.ap-south-1.amazonaws.com/wp-content/uploads/2023/09/merchants.png" alt="">
+                <h4>Rs.1700+ Billion <br><small>TPV in Payments</small></h4>
+            </div>
+            <div class="img">
+                <img src="https://bp-wp-website-prod.s3.ap-south-1.amazonaws.com/wp-content/uploads/2023/09/location-add.png" alt="">
+                <h4>450+ Cities <br><small>Presence across India</small></h4>
+            </div>
+            <div class="img">
+                <img src="https://bp-wp-website-prod.s3.ap-south-1.amazonaws.com/wp-content/uploads/2023/09/cr-mechant.png" alt="">
+                <h4>Rs.12400+ Crores <br><small>Business Loan Facilitated</small></h4>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="content">
+                        <div class="div3"><h1>India's preffered</h1></div>
+                        <div><h1 class="color">POS partner</h1></div>
+                        <br />
+            <p>settle card payments instantly</p>
+            <br />
+            <button>Know More</button>
+                      </div>
+                </div>
+                <div class="col-md-6">
+                    <div>
+                        <img
+                          class="img2"
+                          src="https://bp-wp-website-prod.s3.ap-south-1.amazonaws.com/wp-content/uploads/2023/09/banner-image03.jpg"
+                          alt=""
+                          height="400px"
+                        />
+                      </div>
+                </div>
+            </div>
+        </div>
+            
+            
+          </div>
+          
+    </section>
+    <section >
+        <div id="second">
+            <h4>Why Bharat Pay</h4>
+        <h6><small> We unlock the true potential of your business</small></h6>
+        </div>
+        
+       <div id="img">
+        <img id="margin-img" src="https://bp-wp-website-prod.s3.ap-south-1.amazonaws.com/wp-content/uploads/2023/09/why-bharat-pe-image.jpg" alt="">
+        <h4>The smarter choice to payment acceptance <br><small><small><small> We make payment acceptance fast , secure and more convenient through our range of payment products</small></small></small></h4>
+    </div>
+    </section>
+    <section id="last">
+        <div>
+        <h4>Merchant offererings</h4>
+        <ul>
+            <li id="blue">Payments</li>
+            <li>Banking</li>
+            <li>Lending</li>
+        </ul>
+    </div>
+    <div class="border">
+        <div id="borderall">
+    <img src="https://bp-wp-website-prod.s3.ap-south-1.amazonaws.com/wp-content/uploads/2023/09/BharatPe-UPI-QR.jpg" alt="">
+
+    <h3>BharatPe QR <br><small><small><small>Accept payments anytime, anywhere from multiple payment apps for free</small></small></small></h3>
+    </div>
+</div>
+    </section>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 equal-space">
+                    <img src="https://bharatpe.com//wp-content/uploads/2023/02/Bharatpe-logo-footer.png" alt="">
+                    <h6><small><small>© 2010 - 2024, Zerodha Broking Ltd<br>All rights reserved. </small></small></h6>
+                    <span>
+                        <a href=""><img src="https://bp-wp-website-prod.s3.ap-south-1.amazonaws.com/wp-content/uploads/2023/09/play-st.png" alt=""></a>
+                        <a href=""><img src="https://bp-wp-website-prod.s3.ap-south-1.amazonaws.com/wp-content/uploads/2023/09/app-st.png" alt=""></a>
+                       
+                    </span>
+                </div>
+                <div class="col-md-3">
+                    <h3>smallCompany</h3>
+                    <h6><small>About</small></h6>
+                    <h6><small>Products</small></h6>
+                    <h6><small>Pricing</small></h6>
+                    <h6><small>Referral programme</small></h6>
+                    <h6><small>Careers</small></h6>
+                    <h6><small>Zerodha.tech</small></h6>
+                    <h6><small>Press & media</small></h6>
+                </div>
+                <div class="col-md-3">
+                    <h3>Support</h3>
+                    <h6><small>Contact us</small></h6>
+                    <h6><small>Support portal</small></h6>
+                    <h6><small>Z-Connect blog</small></h6>
+                    <h6><small>List of charges</small></h6>
+                    <h6><small>Market overview</small></h6>
+                    <h6><small>Zerodha.tech</small></h6>
+                    <h6><small>Videos</small></h6>
+                </div>
+                <div class="col-md-3 equal-space">
+                    <h3>Account</h3>
+                    <h6><small>Open an account</small></h6>
+                    <h6><small>Fund transfer</small></h6>
+
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <img src="https://bharatpe.com/wp-content/uploads/2023/05/postpe-logo-footer.svg" alt="">
+                        </div>
+                        <div class="col-md-3">
+                            <img src="https://bharatpe.com/wp-content/uploads/2023/05/club-twelth-footer.svg" alt="">
+                        </div>
+                        <div class="col-md-3">
+                            <img src="https://bharatpe.com/wp-content/uploads/2023/05/zilion-logo-footer.svg" alt="">
+                        </div>
+                        <div class="col-md-3">
+                            <img src="https://bharatpe.com/wp-content/uploads/2023/05/trillion-loans.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+           
+        </div>
+        <div class="line">
+            <hr>
+        </div>
+        
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="img">  </div>
+                        <a href=""><img id="kashish" src="https://cdn-icons-png.flaticon.com/128/174/174855.png" alt=""></a></div>
+                        <div class="col-md-3" ><a href=""><img id="kashish" src="https://cdn-icons-png.flaticon.com/128/174/174848.png" alt=""></a></div>
+                        <div class="col-md-3" ><a href=""><img id="kashish" src="https://cdn-icons-png.flaticon.com/128/1409/1409941.png" alt=""></a></div>
+                        <div class="col-md-3"><a href=""><img id="kashish" src="https://cdn-icons-png.flaticon.com/128/3536/3536505.png" alt=""></a></div>
+                  
+                    
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
